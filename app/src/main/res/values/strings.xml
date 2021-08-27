@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Rick And Morty</string>
+
+    <string name="number_of_episodes">Number of Episodes:</string>
+    <string name="gender">Gender:</string>
+    <string name="origin_location_name">Origin Location Name</string>
+    <string name="last_known_location_name">Last Known Location Name</string>
+    <string name="last_seen_episode_name_and_air_date">Last Seen Episode Name and Air Date</string>
+
+    <string name="desc1">Rick and Morty is an adult animated television series created for Adult Swim by Justin Roiland and Dan Harmon.</string>
+    <string name="desc2">The series chronicles the adventures of alcoholic scientist Rick and his grandson Morty, who divide their time between family life and interdimensional travel.</string>
+    <string name="desc3">You can find all the characters in the application. Let\'s take a look at our app</string>
+    <string name="skip">SKIP</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="favorites">Favorites</string>
+</resources>
