@@ -15,4 +15,5 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="home">Home</string>
     <string name="favorites">Favorites</string>
+    <string name="str_no_character">There is no character in favorite list.</string>
 </resources>
