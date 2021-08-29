@@ -48,7 +48,13 @@ class FavoriteFragment : Fragment() {
         img.visibility = View.GONE
         val imgGrid: ImageView = requireActivity().findViewById(R.id.grid_view)
         val imgList: ImageView = requireActivity().findViewById(R.id.list_view)
-        imgGrid.visibility = View.VISIBLE
+        if (Constants.isGrid){
+            imgGrid.visibility = View.GONE
+            imgList.visibility = View.VISIBLE
+        }else{
+            imgGrid.visibility = View.VISIBLE
+            imgList.visibility = View.GONE
+        }
         imgGrid.setOnClickListener {
             imgGrid.visibility = View.GONE
             imgList.visibility = View.VISIBLE
@@ -74,8 +80,13 @@ class FavoriteFragment : Fragment() {
         sharedPreference = MySharedPreference.MySharedPreference(requireContext())
         mFavoritesList = sharedPreference.retrieveFavorites()
 
-        adapter = FavoritesAdapter(requireContext(), mFavoritesList)
-        binding.favoritesAdapter = adapter
+        if(mFavoritesList.size == 0){
+            binding.txtNoCharacter.visibility = View.VISIBLE
+        }else{
+            binding.txtNoCharacter.visibility = View.GONE
+            adapter = FavoritesAdapter(requireContext(), mFavoritesList)
+            binding.favoritesAdapter = adapter
+        }
 
 
     }
