@@ -89,6 +89,7 @@ class CharactersDaoRepo {
                 mFavoritesList.removeAt(i)
                 val removeItem = gson.toJson(mFavoritesList)
                 sharedPreference.saveFavoritesMarkers(removeItem)
+                break
             }
         }
     }
